@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+    .error{
+        color: red;
+        font-size: 0.85em;
+        display: block;
+        margin-top: 4px;
+    }
+</style>
+</head>
+<body>
+<h1>Student Registration Form</h1>
+<form id="registrationForm" action="">
+<p>
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName" placeholder="Enter
+student's full name">
+<span class ="error" id="fullNameError"></span>
+</p>
+<p>
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<span class ="error" id="genderError"></span>
+</p>
+<p>
+<label for="schoolLevel">School Level:</label>
+<input type="radio" name="schoolLevel" value="Kindergarten"> Kindergarten
+<input type="radio" name="schoolLevel" value="Elementary"> Elementary
+<input type="radio" name="schoolLevel" value="Junior High"> Junior High
+<input type="radio" name="schoolLevel" value="Senior High"> Senior High
+<span class ="error" id="schoolLevelError"></span>
+</p>
+
+<p>
+<label for="schoolName">School Name:</label>
+<input type="text" id="schoolName" name="schoolName" placeholder="Enter
+current school name">
+<span class ="error" id="schoolNameError"></span>
+</p>
+<p>
+<label for="address">Full Address:</label>
+<textarea id="address" name="address" placeholder="Enter complete home
+address"></textarea>
+<span class ="error" id="addressError"></span>
+</p>
+<p>
+<label for="parentName">Parent's Name:</label>
+<input type="text" id="parentName" name="parentName" placeholder="Enter
+parent's full name">
+<span class = "error" id="parentNameError"></span>
+</p>
+<p>
+<label for="phoneNumber">Phone Number:</label>
+<input type="number" id="phoneNumber" name="phoneNumber"
+placeholder="e.g. 081234567890">
+<span class ="error" id="phoneNumberError"></span>
+</p>
+<p>
+<label for="schedule">Tutoring Schedule:</label>
+<input type="time" id="schedule" name="schedule">
+<span class ="error" id="scheduleError"></span>
+</p>
+<p>
+<label for="program">Select Tutoring Program:</label>
+<input type="checkbox" class="program" value="Mathematics"> Mathematics
+<input type="checkbox" class="program" value="English"> English
+<input type="checkbox" class="program" value="Dance"> Traditional Dance
+<input type="checkbox" class="program" value="School Subject"> School
+Subjects
+<span class = "error" id="programError"></span>
+</p>
+<p>
+<button type="submit">Submit</button>
+<button type="reset">Cancel</button>
+</p>
+
+</form>
+<script src="script.js"></script>
+
+
+</body>
+</html>
